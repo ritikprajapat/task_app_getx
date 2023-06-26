@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:task_app_getx/app/data/services/storage/services.dart';
+import 'package:task_app_getx/app/modules/home/home_binding.dart';
 import 'package:task_app_getx/app/modules/home/home_view.dart';
 
 void main() async {
@@ -18,7 +20,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Task App using Getx',
-      home: const HomeView(),
+      home: HomeView(),
+      initialBinding: HomeBinding(),
+      builder: EasyLoading.init(),
     );
   }
 }

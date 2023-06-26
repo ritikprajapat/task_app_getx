@@ -7,7 +7,7 @@ extension PercentSized on double {
 }
 
 extension ResponsiveText on double {
-  double get sp => Get.width / 100 * (this / 100);
+  double get sp => Get.width / 100 * (this / 3);
 }
 
 extension HexColor on Color {
