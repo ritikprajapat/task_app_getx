@@ -52,5 +52,5 @@ class Task extends Equatable {
   factory Task.fromJson(String source) => Task.fromMap(json.decode(source));
 
   @override
-  List<Object?> get props => [title,icon,color];
+  List<Object?> get props => [title, icon, color];
 }

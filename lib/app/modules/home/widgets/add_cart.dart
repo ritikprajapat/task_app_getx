@@ -92,7 +92,7 @@ class AddCart extends StatelessWidget {
                         Get.back();
                         homeCtrl.addTask(task)
                             ? EasyLoading.showSuccess('Create Sucessfully')
-                            : EasyLoading.showError('Duplicate Task');
+                            : EasyLoading.showError('Duplicated Task');
                       }
                     },
                     child: const Text('Confirm'),
